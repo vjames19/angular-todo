@@ -321,6 +321,11 @@ module.exports = function (grunt) {
         configFile: 'karma.conf.js',
         singleRun: true
       }
+    },
+    githooks: {
+      options: {
+        'pre-commit': 'jshint test'
+      }
     }
   });
 
